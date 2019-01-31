@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency problem</title>
+</head>
+<body>
+	<h3>Calculate Mininum number of Notes:</h3>
+	Enter an amount:<input id="in1">
+	<button onclick="myFun()">click</button>
+<script type="text/javascript">
+		
+		var n = Number(document.getElementById("in1").value);
+
+function myFun()
+{
+	var num=0;
+	if(n>=1)
+	{			
+			while (n>=2000 && num==0 && str!=0)
+			  {
+				  var str=n%2000;
+				  var note = parseInt(n/2000);
+				  var num=num+str;
+					
+				   console.log("2000 notes: "+note);	
+				   
+			   }
+			
+			while(str>=500 && str <2000 && str !=0)
+				{
+					var str1 = str%500;
+					var num1 =parseInt(str/500);
+
+					console.log("500 notes : "+num1);
+					if(str1==0)
+						break;
+				}
+
+			while (str1>=200 && str1 <500 && str1!=0)
+				{
+					var str2 = str1%200;
+					var num2 = pasreInt(str1/200);
+
+					console.log("200 notes : "+num2);
+					if(str2==0)
+						break;
+
+				}
+			
+			while(str2>=100 && str2 <200 && str2!=0)
+				{
+					var str3 = str2%100;
+					var num3 = parseInt(str2/100);
+
+					console.log("100 notes :"+num3);
+
+					if(str3==0)
+						break;
+
+				}
+			
+			while(str3>=50 && str3 <100 && str3!=0)
+				{
+					var str4 = str3%50;
+					var num4 = parseInt(num4/50);
+
+					console.log("50 notes : "+num4);
+					if(str4==0)
+						break;
+					
+				}
+			
+			while (str4>=20 && str4 <50 && str4!=0)
+				{
+					var str5 = str4%20;
+					var num5 =parseInt(str4/20);
+					console.log("20 notes : "+num5);
+					if(str5==0)
+						break;
+					
+				}
+					
+			while (str5>=10 && str5 <20 && str5!=0)
+				{
+					var str6 = str5%10;
+					var num6 = str5/10;
+					console.log("10 notes:"+num6);
+					if(str6==0)
+						break;
+
+				}
+
+			while (str6>=5 && str6 <10 && str6!=0)
+				{
+					var str7 = str6%5;
+					var num7 = str6/5;
+					console.log("5 notes :"+num7);
+					if(str7==0)
+						break;
+
+				}
+
+			while (str7>=2 && str7 <5 && str7!=0)
+				{
+					var str8 = str7%2;
+					var num8= str7/2;
+
+					console.log("2 notes: "+num8);
+					if(str8==0)
+						break;
+					
+
+				}
+
+			while (str8>=1 && str8 <2 && str8!=0)
+				{
+					var str9 = str8%1;
+					var num9 = str8/1;
+					console.log("1 coin"+num9);
+
+					if(str9s==0)
+						break;
+
+				}
+
+	}
+
+	else 
+	{
+		alert("Enter an amount please!");
+	}
+
+
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
